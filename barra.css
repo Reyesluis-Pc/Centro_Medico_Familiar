@@ -1,0 +1,382 @@
+
+/* =========================================
+   1. VARIABLES DE COLORES
+========================================= */
+
+:root {
+    --azul: #176b87;
+    --turquesa: #20b8b0;
+    --azul-oscuro: #12445a;
+    --fondo-hover: #edf7ff;
+    --blanco: #ffffff;
+    --texto: #263746;
+}
+
+/* =========================================
+   2. CONFIGURACIÓN GENERAL
+========================================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: var(--texto);
+    background-color: #f7fbfd;
+}
+
+/* =========================================
+   3. ENCABEZADO
+========================================= */
+
+.encabezado {
+    width: 100%;
+    background-color: var(--blanco);
+
+    box-shadow: 0 3px 15px rgba(0, 0, 0, 0.08);
+
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+/* =========================================
+   4. BARRA DE NAVEGACIÓN
+========================================= */
+
+.navbar {
+    width: 100%;
+    max-width: 1500px;
+    min-height: 100px;
+
+    margin: auto;
+    padding: 15px 35px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+/* =========================================
+   5. LOGO
+========================================= */
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+
+    color: var(--azul);
+    font-size: 34px;
+    font-weight: bold;
+    text-decoration: none;
+
+    white-space: nowrap;
+}
+
+.logo img {
+    width: 150px;
+    height: 150px;
+    object-fit: contain;
+}
+
+/* =========================================
+   6. MENÚ
+========================================= */
+
+.menu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+
+    list-style: none;
+}
+
+.menu li {
+    list-style: none;
+}
+
+/* =========================================
+   7. ENLACES
+========================================= */
+
+.enlace {
+    position: relative;
+    display: inline-block;
+
+    padding: 17px 15px;
+
+    color: var(--texto);
+    font-size: 18px;
+    font-weight: 600;
+    text-decoration: none;
+
+    border-radius: 10px;
+
+    transition:
+        color 0.3s ease,
+        background 0.3s ease;
+}
+
+/* =========================================
+   8. LÍNEA TURQUESA
+========================================= */
+
+.enlace::after {
+    content: "";
+
+    position: absolute;
+    left: 50%;
+    bottom: 6px;
+
+    width: 0;
+    height: 4px;
+
+    background: var(--turquesa);
+    border-radius: 5px;
+
+    transform: translateX(-50%);
+    transition: width 0.3s ease;
+}
+
+/* Efecto al pasar el cursor */
+
+.enlace:hover {
+    color: var(--azul);
+    background: var(--fondo-hover);
+}
+
+.enlace:hover::after {
+    width: 50%;
+}
+
+/* =========================================
+   9. RESALTAR LA PÁGINA ACTUAL
+========================================= */
+
+.pagina-inicio .enlace-inicio,
+.pagina-servicios .enlace-servicios,
+.pagina-medicos .enlace-medicos,
+.pagina-contacto .enlace-contacto,
+.pagina-nosotros .enlace-nosotros {
+    color: var(--azul);
+    background: var(--fondo-hover);
+}
+
+/* Línea permanente debajo de la página actual */
+
+.pagina-inicio .enlace-inicio::after,
+.pagina-servicios .enlace-servicios::after,
+.pagina-medicos .enlace-medicos::after,
+.pagina-contacto .enlace-contacto::after,
+.pagina-nosotros .enlace-nosotros::after {
+    width: 50%;
+}
+
+/* =========================================
+   10. CHECKBOX DEL MENÚ MÓVIL
+========================================= */
+
+.menu-checkbox {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+
+    overflow: hidden;
+    clip-path: inset(50%);
+}
+
+/* =========================================
+   11. BOTÓN HAMBURGUESA
+========================================= */
+
+.menu-toggle {
+    display: none;
+
+    width: 48px;
+    height: 48px;
+    padding: 10px;
+
+    background: var(--fondo-hover);
+    border-radius: 10px;
+
+    cursor: pointer;
+}
+
+.menu-toggle span {
+    display: block;
+
+    width: 25px;
+    height: 3px;
+    margin: 6px auto;
+
+    background: var(--azul);
+    border-radius: 5px;
+
+    transition: all 0.3s ease;
+}
+
+/* =========================================
+   12. TABLETAS
+========================================= */
+
+@media (max-width: 1100px) {
+
+    .navbar {
+        padding: 15px 20px;
+        gap: 12px;
+    }
+
+    .logo {
+        font-size: 25px;
+        gap: 12px;
+    }
+
+    .logo img {
+        width: 60px;
+        height: 60px;
+    }
+
+    .menu {
+        gap: 3px;
+    }
+
+    .enlace {
+        padding: 13px 9px;
+        font-size: 15px;
+    }
+}
+
+/* =========================================
+   13. TELÉFONOS Y TABLETAS PEQUEÑAS
+========================================= */
+
+@media (max-width: 780px) {
+
+    .navbar {
+        min-height: 85px;
+        flex-wrap: wrap;
+        padding: 12px 18px;
+    }
+
+    /* Logo */
+
+    .logo {
+        font-size: 22px;
+        gap: 10px;
+    }
+
+    .logo img {
+        width: 55px;
+        height: 55px;
+    }
+
+    /* Botón hamburguesa */
+
+    .menu-toggle {
+        display: block;
+        margin-left: auto;
+        flex-shrink: 0;
+    }
+
+    /* Menú cerrado */
+
+    .menu {
+        display: none;
+
+        flex-direction: column;
+        align-items: stretch;
+
+        width: 100%;
+        gap: 5px;
+
+        padding: 12px 0;
+    }
+
+    /* Abrir menú sin JavaScript */
+
+    .menu-checkbox:checked ~ .menu {
+        display: flex;
+    }
+
+    /* Animación del botón */
+
+    .menu-checkbox:checked + .menu-toggle span:nth-child(1) {
+        transform: translateY(9px) rotate(45deg);
+    }
+
+    .menu-checkbox:checked + .menu-toggle span:nth-child(2) {
+        opacity: 0;
+    }
+
+    .menu-checkbox:checked + .menu-toggle span:nth-child(3) {
+        transform: translateY(-9px) rotate(-45deg);
+    }
+
+    /* Enlaces en móviles */
+
+    .menu li {
+        width: 100%;
+    }
+
+    .enlace {
+        display: block;
+        width: 100%;
+
+        padding: 14px 12px;
+        font-size: 16px;
+    }
+
+    /* Línea alineada a la izquierda */
+
+    .enlace::after {
+        left: 12px;
+        bottom: 5px;
+        transform: none;
+    }
+
+    .enlace:hover::after {
+        width: 45px;
+    }
+
+    /* Línea de la página actual */
+
+    .pagina-inicio .enlace-inicio::after,
+    .pagina-servicios .enlace-servicios::after,
+    .pagina-medicos .enlace-medicos::after,
+    .pagina-contacto .enlace-contacto::after,
+    .pagina-nosotros .enlace-nosotros::after {
+        width: 45px;
+    }
+}
+
+/* =========================================
+   14. TELÉFONOS PEQUEÑOS
+========================================= */
+
+@media (max-width: 380px) {
+
+    .navbar {
+        padding: 10px 12px;
+    }
+
+    .logo {
+        font-size: 18px;
+        gap: 8px;
+    }
+
+    .logo img {
+        width: 45px;
+        height: 45px;
+    }
+
+    .menu-toggle {
+        width: 42px;
+        height: 42px;
+    }
+}
