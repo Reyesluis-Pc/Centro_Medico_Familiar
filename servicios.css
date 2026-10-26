@@ -795,4 +795,28 @@
         padding: 22px;
     }
 
+} 
+
+.servicio-tarjeta-pie {
+    margin-top: auto;
+    padding-top: 16px;
+}
+
+.btn-mas-info {
+    display: block;
+    width: 100%;
+    background-color: var(--turquesa-oscuro);
+    color: #ffffff;
+    text-align: center;
+    padding: 14px 20px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1rem;
+    transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+.btn-mas-info:hover {
+    background-color: #e5eef6;
+    transform: translateY(-2px);
 }

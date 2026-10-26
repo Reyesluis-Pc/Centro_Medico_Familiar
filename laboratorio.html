@@ -1,0 +1,350 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paneles de Diagnóstico y Laboratorio - Hospital</title>
+    <link rel="stylesheet" href="laboratorio.css">
+    <style>
+        /* Estilos específicos para alinear a la izquierda y hacer más grande el botón */
+        .section-header {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start; /* Alinea todo al lado izquierdo */
+            text-align: left;
+            margin-bottom: 30px;
+        }
+
+        .btn-volver {
+            display: inline-block;
+            padding: 12px 24px;       /* Botón más grande */
+            font-size: 16px;          /* Texto más legible */
+            font-weight: bold;
+            color: #ffffff;
+            background-color: #087F8C;/* Color azul profesional */
+            border-radius: 6px;       /* Bordes ligeramente redondeados */
+            text-decoration: none;
+            margin-bottom: 20px;      /* Separación con el título */
+            transition: background-color 0.2s ease;
+        }
+
+        .btn-volver:hover {
+            background-color: #18A6A6;/* Efecto al pasar el cursor */
+        }
+    </style>
+</head>
+<body>
+
+<section class="hospital-section">
+    <div class="section-header">
+        <!-- Botón de regreso más grande y alineado a la izquierda -->
+        <a href="servicios.html" class="btn-volver">&larr; Volver a Servicios</a>
+        
+        <h2>Paneles de Diagnóstico y Laboratorio</h2>
+        <p>Listado completo de exámenes médicos disponibles</p>
+    </div>
+
+    <div class="panels-grid">
+        <!-- 1. Hematología -->
+        <div class="panel-card">
+            <div class="panel-title">Hematología</div>
+            <div class="panel-content">
+                <ul class="panel-list">
+                    <li>Hematología completa</li>
+                    <li>Gota Gruesa</li>
+                    <li>Grupo Sanguíneo y Factor Rh</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- 2. Pruebas de Coagulación -->
+        <div class="panel-card">
+            <div class="panel-title">Pruebas de Coagulación</div>
+            <div class="panel-content">
+                <ul class="panel-list">
+                    <li>Tiempo de Coagulación y Sangría</li>
+                    <li>TP</li>
+                    <li>TPT</li>
+                    <li>Fibrinógeno</li>
+                    <li>INR</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- 3. Heces -->
+        <div class="panel-card">
+            <div class="panel-title">Heces</div>
+            <div class="panel-content">
+                <ul class="panel-list">
+                    <li>Examen Completo</li>
+                    <li>Enema Salino</li>
+                    <li>Test de Graham</li>
+                    <li>Sangre Oculta</li>
+                    <li>Clinitest</li>
+                    <li>Rotavirus</li>
+                    <li>Ag. H Pylori</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- 4. Orina -->
+        <div class="panel-card">
+            <div class="panel-title">Orina</div>
+            <div class="panel-content">
+                <ul class="panel-list">
+                    <li>Examen Completo</li>
+                    <li>Prueba de Embarazo</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- 5. Enzimas -->
+        <div class="panel-card">
+            <div class="panel-title">Enzimas</div>
+            <div class="panel-content">
+                <ul class="panel-list">
+                    <li>Amilasa</li>
+                    <li>Lipasa</li>
+                    <li>CPK-Total</li>
+                    <li>Fosfatasa Ácida</li>
+                    <li>Fosfatasa Alcalina</li>
+                    <li>Fracción Prostática</li>
+                    <li>TGO/ASAT</li>
+                    <li>TGP/ALAT</li>
+                    <li>Gamma-Glutamil Trasnferasa</li>
+                    <li>Deshidrogenasa Láctica</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- 6. Electrolitos -->
+        <div class="panel-card">
+            <div class="panel-title">Electrolitos</div>
+            <div class="panel-content">
+                <ul class="panel-list">
+                    <li>Calcio</li>
+                    <li>Cloruro</li>
+                    <li>Sodio</li>
+                    <li>Potasio</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- 7. Químicos -->
+        <div class="panel-card">
+            <div class="panel-title">Químicos</div>
+            <div class="panel-content">
+                <ul class="panel-list">
+                    <li>Glucosa (Pre / Post)</li>
+                    <li>Ácido Úrico</li>
+                    <li>Albúmina</li>
+                    <li>Bilirrubinas Total y Directas</li>
+                    <li>Colesterol Total</li>
+                    <li>Colesterol HDL</li>
+                    <li>Colesterol LDL</li>
+                    <li>Triglicéridos</li>
+                    <li>Creatina</li>
+                    <li>Hemoglobina Glicosilada</li>
+                    <li>Nitrógeno de Urea</li>
+                    <li>Urea</li>
+                    <li>Proteínas Totales</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- 8. Inmunológico -->
+        <div class="panel-card">
+            <div class="panel-title">Inmunológico</div>
+            <div class="panel-content">
+                <ul class="panel-list">
+                    <li>Antireptolisina O</li>
+                    <li>Factor Reumatoideo</li>
+                    <li>Proteína C Reactiva</li>
+                    <li>Widal</li>
+                    <li>Chikungunya</li>
+                    <li>Dengue</li>
+                    <li>HIV</li>
+                    <li>Hepatitis A (IgG / IgM)</li>
+                    <li>TORCH (IgG / IgM)</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- 9. Hormonas -->
+        <div class="panel-card">
+            <div class="panel-title">Hormonas</div>
+            <div class="panel-content">
+                <ul class="panel-list">
+                    <li>T3, T4a</li>
+                    <li>THS</li>
+                    <li>FSH</li>
+                    <li>LH</li>
+                    <li>Prolactina</li>
+                    <li>Estradiol</li>
+                    <li>Progesterona</li>
+                    <li>Testosterona</li>
+                    <li>HCG (Prueba de Embarazo - Orina / Sangre)</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- 10. Microbiología -->
+        <div class="panel-card">
+            <div class="panel-title">Microbiología</div>
+            <div class="panel-content">
+                <ul class="panel-list">
+                    <li>Secreción Vaginal (Gram Fresco)</li>
+                    <li>Secreción Uretral</li>
+                    <li>Ziehl Neelsen</li>
+                    <li>Gram</li>
+                    <li>Giemsa</li>
+                    <li>Orocultivo</li>
+                    <li>Urocultivo</li>
+                    <li>Coprocultivo</li>
+                    <li>Cultivo de Esputo</li>
+                    <li>Cultivo de Secreción Vaginal</li>
+                    <li>Cultivo de Secreción Uretral</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- 11. Drogas -->
+        <div class="panel-card">
+            <div class="panel-title">Drogas</div>
+            <div class="panel-content">
+                <ul class="panel-list">
+                    <li>Carbamazepina</li>
+                    <li>Fenitoína (Epamin)</li>
+                    <li>Fenobarbital (Barbitúricos)</li>
+                    <li>Digoxina</li>
+                    <li>Alcohol (Sangre)</li>
+                    <li>Panel de uso de Drogas</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- 12. Perfil Diabético 2 -->
+        <div class="panel-card">
+            <div class="panel-title">Perfil Diabético 2</div>
+            <div class="panel-content">
+                <ul class="panel-list">
+                    <li>Orina</li>
+                    <li>Curva de Tolerancia a la Glucosa de 3 Hrs. - Hemoglobina Glicosilada</li>
+                    <li>Curva de Tolerancia a la Glucosa de 5 Hrs. - Hemoglobina Glicosilada</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- 13. Perfil Reumático -->
+        <div class="panel-card">
+            <div class="panel-title">Perfil Reumático</div>
+            <div class="panel-content">
+                <ul class="panel-list">
+                    <li>Ácido Úrico</li>
+                    <li>Antireptolisina</li>
+                    <li>Factor Reumatoideo</li>
+                    <li>Proteína C Reactiva</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- 14. Perfil Cardiovascular -->
+        <div class="panel-card">
+            <div class="panel-title">Perfil Cardiovascular</div>
+            <div class="panel-content">
+                <ul class="panel-list">
+                    <li>Colesterol Total</li>
+                    <li>Colesterol HDL</li>
+                    <li>Colesterol LDL</li>
+                    <li>Triglicéridos</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- 15. Perfil Renal 1 -->
+        <div class="panel-card">
+            <div class="panel-title">Perfil Renal 1</div>
+            <div class="panel-content">
+                <ul class="panel-list">
+                    <li>Orina</li>
+                    <li>Creatinina</li>
+                    <li>Nitrógeno de Urea</li>
+                    <li>Proteínas y Ref. A/G</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- 16. Perfil Renal 2 -->
+        <div class="panel-card">
+            <div class="panel-title">Perfil Renal 2</div>
+            <div class="panel-content">
+                <ul class="panel-list">
+                    <li>Perfil Renal 1</li>
+                    <li>Ácido Úrico</li>
+                    <li>Proteínas Orina de 24 Horas</li>
+                    <li>Sodio y Potasio</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- 17. Perfil Diabético 1 -->
+        <div class="panel-card">
+            <div class="panel-title">Perfil Diabético 1</div>
+            <div class="panel-content">
+                <ul class="panel-list">
+                    <li>Orina</li>
+                    <li>Glucosa en ayunas</li>
+                    <li>Glucosa 2PP</li>
+                    <li>Hemoglobina Glicosilada</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- 18. Perfil Rutina 1 -->
+        <div class="panel-card">
+            <div class="panel-title">Perfil Rutina 1</div>
+            <div class="panel-content">
+                <ul class="panel-list">
+                    <li>Hematología</li>
+                    <li>Heces</li>
+                    <li>Orina</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- 19. Perfil Rutina 2 -->
+        <div class="panel-card">
+            <div class="panel-title">Perfil Rutina 2</div>
+            <div class="panel-content">
+                <ul class="panel-list">
+                    <li>Perfil Rutina 1</li>
+                    <li>Glucosa</li>
+                    <li>Ácido Úrico</li>
+                    <li>Creatinina</li>
+                    <li>Nitrógeno de Urea</li>
+                    <li>Fenotipo de Lípidos</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- 20. Perfil Hepático -->
+        <div class="panel-card">
+            <div class="panel-title">Perfil Hepático</div>
+            <div class="panel-content">
+                <ul class="panel-list">
+                    <li>Bilirrubinas</li>
+                    <li>TGO</li>
+                    <li>TGP</li>
+                    <li>Fosfatasa Alcalina</li>
+                    <li>Gama GT</li>
+                    <li>Proteínas y Ref. A/G</li>
+                </ul>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+</body>
+</html>
