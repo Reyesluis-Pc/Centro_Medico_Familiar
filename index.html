@@ -1,0 +1,537 @@
+
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Centro Médico Familiar</title>
+
+    <!-- CSS COMPARTIDO DE LA BARRA -->
+    <link rel="stylesheet" href="barra.css">
+    <link rel="stylesheet" href="estilos.css">
+</head>
+
+<!-- MODIFICA ESTA CLASE SEGÚN LA PÁGINA -->
+<body class="pagina-inicio">
+
+<!-- Pantalla de carga -->
+<div id="pantalla-carga">
+    <div class="carga-contenido">
+
+        <!-- Logo del centro médico -->
+        <img src="img/logo.png"
+             alt="Logo del centro médico"
+             class="logo-carga">
+
+        <h2>Centro Médico</h2>
+        <p>Cuidamos de ti y de tu familia</p>
+
+        <!-- Línea de carga -->
+        <div class="barra-carga">
+            <div class="progreso-carga"></div>
+        </div>
+
+    </div>
+</div>
+
+
+    <!-- BARRA DE NAVEGACIÓN -->
+    <header class="encabezado">
+
+        <nav class="navbar">
+
+            <!-- LOGO -->
+            <a href="index.html" class="logo">
+                <img src="img/logo.png" alt="Logo del centro médico">
+
+                <span class="nombre">
+                    Centro Médico Familiar
+                </span>
+            </a>
+
+            <!-- BOTÓN HAMBURGUESA SIN JAVASCRIPT -->
+            <input
+                type="checkbox"
+                id="menuToggle"
+                class="menu-checkbox"
+            >
+
+            <label
+                for="menuToggle"
+                class="menu-toggle"
+                aria-label="Abrir o cerrar menú"
+            >
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+
+            <!-- OPCIONES DEL MENÚ -->
+            <ul class="menu">
+
+                <li>
+                    <a href="index.html" class="enlace enlace-inicio">
+                        Inicio
+                    </a>
+                </li>
+
+                <li>
+                    <a href="servicios.html" class="enlace enlace-servicios">
+                        Servicios
+                    </a>
+                </li>
+
+                <li>
+                    <a href="medicos.html" class="enlace enlace-medicos">
+                        Médicos
+                    </a>
+                </li>
+
+                <li>
+                    <a href="contactos.html" class="enlace enlace-contacto">
+                        Contacto
+                    </a>
+                </li>
+
+                <li>
+                    <a href="nosotros.html" class="enlace enlace-nosotros">
+                        Nosotros
+                    </a>
+                </li>
+
+            </ul>
+
+        </nav>
+
+    </header>
+<!-- empieza el contenido-->
+<main>
+
+    <!-- HERO / BIENVENIDA -->
+    <section class="inicio-hero">
+
+        <div class="inicio-hero-imagen"></div>
+
+        <div class="inicio-hero-contenido">
+
+            <span class="inicio-etiqueta">
+                BIENVENIDOS A NUESTRO CENTRO MÉDICO
+            </span>
+
+            <h1>
+                Cuidamos tu salud,
+                <span>acompañamos tu vida.</span>
+            </h1>
+
+            <p>
+                Nuestro compromiso es brindar una atención
+                humana, responsable y cercana, poniendo el
+                bienestar de cada paciente en el centro de
+                todo lo que hacemos.
+            </p>
+
+            <div class="inicio-hero-botones">
+
+                <a href="servicios.html" class="inicio-btn-principal">
+                    Conoce nuestros servicios
+                    <span>→</span>
+                </a>
+
+                <a href="nosotros.html" class="inicio-btn-secundario">
+                    Conócenos
+                </a>
+
+            </div>
+
+        </div>
+
+        <div class="inicio-hero-indicador">
+            <span></span>
+            Atención y compromiso con tu bienestar
+        </div>
+
+    </section>
+
+
+    <!-- MISIÓN Y VISIÓN -->
+    <section class="inicio-identidad">
+
+        <div class="inicio-encabezado">
+
+            <span class="inicio-subtitulo">
+                NUESTRA IDENTIDAD
+            </span>
+
+            <h2>
+                Trabajamos por un futuro
+                <span>más saludable.</span>
+            </h2>
+
+            <p>
+                Nuestros principios orientan cada una de
+                nuestras acciones y el compromiso que
+                mantenemos con nuestros pacientes.
+            </p>
+
+        </div>
+
+
+        <div class="inicio-mision-vision">
+
+            <!-- MISIÓN -->
+            <article class="inicio-tarjeta-identidad">
+
+                <div class="inicio-icono-identidad">
+                    <span>✚</span>
+                </div>
+
+                <span class="inicio-numero">01 / PROPÓSITO</span>
+
+                <h3>Nuestra misión</h3>
+
+                <p>
+                    Nuestro compromiso como institución médica guatemalteca es promover la recuperación 
+                    de la salud, Proporcionando servicios integrales, de atención personalizada a los pacientes.
+                </p>
+
+                <div class="inicio-linea-decorativa"></div>
+
+            </article>
+
+
+            <!-- VISIÓN -->
+            <article class="inicio-tarjeta-identidad">
+
+                <div class="inicio-icono-identidad">
+                    <span>◎</span>
+                </div>
+
+                <span class="inicio-numero">02 / FUTURO</span>
+
+                <h3>Nuestra visión</h3>
+
+                <p>
+               Ser una institución médica privada que establezca el más alto estándar de calidad en la atención médica de servicios hospitalarios de San Juan Sacatepéquez y sus alrededores. 
+                </p>
+
+                <div class="inicio-linea-decorativa"></div>
+
+            </article>
+
+        </div>
+
+    </section>
+
+
+    <!-- VALORES -->
+    <section class="inicio-valores">
+
+        <div class="inicio-encabezado">
+
+            <span class="inicio-subtitulo">
+                LO QUE NOS REPRESENTA
+            </span>
+
+            <h2>
+                Nuestros valores
+            </h2>
+
+            <p>
+                Los principios que inspiran nuestra forma
+                de trabajar y relacionarnos con cada paciente.
+            </p>
+
+        </div>
+
+
+        <div class="inicio-valores-grid">
+
+            <article class="inicio-tarjeta-valor">
+
+                <div class="inicio-icono-valor">✧</div>
+
+                <h3>EXCELENCIA</h3>
+
+                <p>
+                    Todo nuestro personal busca alcanzar las mejores prácticas y la innovación en proveer cuidados de la más alta calidad para que nuestros pacientes y sus familias se sientan satisfechos con nuestro servicio.
+                </p>
+
+            </article>
+
+
+            <article class="inicio-tarjeta-valor">
+
+                <div class="inicio-icono-valor">◇</div>
+
+                <h3>INTEGRIDAD</h3>
+
+                <p>
+                Como institución, estamos comprometidos a actuar con rectitud, honestidad, transparencia, respeto y lealtad para todas las personas.
+                </p>
+
+            </article>
+
+
+            <article class="inicio-tarjeta-valor">
+
+                <div class="inicio-icono-valor">✚</div>
+
+                <h3>HUMANIZACIÓN DE SERVICIO</h3>
+
+                <p>
+                  El personal de la Institución Médica actúa de manera consciente y sensible con respecto a la atención que requieren nuestros pacientes, la cual debe realizarse en el contexto de la ética y los valores, de este modo se pretende atender al paciente y su familia supliendo sus necesidades a nivel físico, emocional, intelectual y social.
+                </p>
+
+            </article>
+
+
+            <article class="inicio-tarjeta-valor">
+
+                <div class="inicio-icono-valor">♡</div>
+
+                <h3>RESPETO</h3>
+
+                <p>
+                    Como Institución Médica empleamos con todo nuestro personal un ambiente de confianza, basado en el respeto mutuo, el cual es reflejado y percibido por nuestros clientes a través de la atención.
+                </p>
+
+            </article>
+
+        </div>
+
+    </section>
+
+
+    <!-- SERVICIOS MÉDICOS -->
+    <section class="inicio-servicios">
+
+        <div class="inicio-encabezado">
+
+            <span class="inicio-subtitulo">
+                ESTAMOS PARA ORIENTARTE
+            </span>
+
+            <h2>
+                Nuestros servicios
+            </h2>
+
+            <p>
+                Conoce las áreas de atención y encuentra
+                la información que necesitas.
+            </p>
+
+        </div>
+
+
+        <div class="inicio-servicios-grid">
+
+            <article class="inicio-tarjeta-servicio">
+
+                <div class="inicio-servicio-icono">
+                    <span>✚</span>
+                </div>
+
+                <h3>Atención médica</h3>
+
+                <p>
+                    Consulta información sobre los servicios
+                    de atención médica disponibles en nuestro centro.
+                </p>
+
+                <a href="servicios.html">
+                    Explorar servicios <span>→</span>
+                </a>
+
+            </article>
+
+
+            <article class="inicio-tarjeta-servicio">
+
+                <div class="inicio-servicio-icono">
+                    <span>⌕</span>
+                </div>
+
+                <h3>Farmacia</h3>
+
+                <p>
+                    Consulta información sobre los servicios
+                    de farmacia y la disponibilidad de atención.
+                </p>
+
+                <a href="servicios.html">
+                    Obtener información <span>→</span>
+                </a>
+
+            </article>
+
+
+            <article class="inicio-tarjeta-servicio">
+
+                <div class="inicio-servicio-icono">
+                    <span>＋</span>
+                </div>
+
+                <h3>Exámenes médicos</h3>
+
+                <p>
+                    Infórmate sobre los exámenes disponibles,
+                    sus requisitos y los procedimientos de atención.
+                </p>
+
+                <a href="servicios.html">
+                    Conocer más <span>→</span>
+                </a>
+
+            </article>
+
+        </div>
+
+
+        <div class="inicio-servicios-final">
+
+            <p>
+                ¿Necesitas más información sobre nuestros servicios?
+            </p>
+
+            <a href="servicios.html" class="inicio-btn-principal">
+                Ver todos los servicios <span>→</span>
+            </a>
+
+        </div>
+
+    </section>
+
+
+    <!-- NOSOTROS Y EQUIPO MÉDICO -->
+    <section class="inicio-conocenos">
+
+        <div class="inicio-conocenos-imagen">
+
+            <img
+                src="img/Personal.png"
+                alt="Equipo de profesionales del centro médico"
+                loading="lazy"
+            >
+
+            <div class="inicio-imagen-acento"></div>
+
+        </div>
+
+
+        <div class="inicio-conocenos-contenido">
+
+            <span class="inicio-subtitulo">
+                CONOCE QUIÉNES SOMOS
+            </span>
+
+            <h2>
+                Detrás de cada atención,
+                hay un compromiso con las personas.
+            </h2>
+
+            <p>
+                Conoce nuestra historia, los principios que
+                nos representan y al equipo humano que forma
+                parte de nuestro centro médico.
+            </p>
+
+
+            <div class="inicio-enlace-seccion">
+
+                <div class="inicio-enlace-icono">
+                    ♧
+                </div>
+
+                <div class="inicio-enlace-texto">
+                    <h3>Sobre nosotros</h3>
+
+                    <p>
+                        Descubre nuestra historia,
+                        filosofía y valores institucionales.
+                    </p>
+
+                    <a href="nosotros.html">
+                        Conocer el centro <span>→</span>
+                    </a>
+                </div>
+
+            </div>
+
+
+            <div class="inicio-enlace-seccion">
+
+                <div class="inicio-enlace-icono">
+                    ♙
+                </div>
+
+                <div class="inicio-enlace-texto">
+                    <h3>Nuestro equipo médico</h3>
+
+                    <p>
+                        Conoce a los profesionales y consulta
+                        la información sobre sus especialidades.
+                    </p>
+
+                    <a href="medicos.html">
+                        Conocer a los médicos <span>→</span>
+                    </a>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- CONSEJO DE SALUD -->
+    <section class="inicio-consejo">
+
+        <div class="inicio-consejo-decoracion"></div>
+
+        <div class="inicio-consejo-contenido">
+
+            <div class="inicio-consejo-icono">
+                ♡
+            </div>
+
+            <span class="inicio-subtitulo">
+                UN MOMENTO PARA CUIDARTE
+            </span>
+
+            <h2>
+                Tu salud también se construye
+                con pequeños hábitos.
+            </h2>
+
+            <p>
+                Mantén una alimentación equilibrada, realiza
+                actividad física con regularidad, procura
+                descansar lo suficiente y dedica tiempo
+                a tu bienestar emocional.
+            </p>
+
+            <div class="inicio-consejo-pie">
+                <span>♥️</span>
+                Cuidarte hoy es una inversión en tu bienestar.
+            </div>
+
+        </div>
+
+        <div class="inicio-consejo-circulo">
+            <div class="inicio-consejo-circulo-interior">
+                <span>+</span>
+                <strong>Tu bienestar</strong>
+                <small>es importante</small>
+            </div>
+        </div>
+
+    </section>
+
+</main>
+<script src="carga.js"></script>
+
+</body>
+</html>

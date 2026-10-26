@@ -1,0 +1,798 @@
+/* =====================================
+   CONFIGURACIÓN GENERAL
+===================================== */
+
+.servicios-pagina {
+    --turquesa: #18A6A6;
+    --turquesa-oscuro: #087F8C;
+    --azul-claro: #77D4E8;
+    --azul-fondo: #EAF8FC;
+    --fondo: #F5F9FC;
+    --blanco: #FFFFFF;
+    --texto: #334E68;
+    --texto-suave: #6B8294;
+    --borde: #E0EDF2;
+
+    color: var(--texto);
+    background: var(--fondo);
+    overflow: hidden;
+}
+
+.servicios-pagina * {
+    box-sizing: border-box;
+}
+
+.servicios-pagina h1,
+.servicios-pagina h2,
+.servicios-pagina h3,
+.servicios-pagina p {
+    margin-top: 0;
+}
+
+.servicios-pagina a {
+    text-decoration: none;
+}
+
+
+/* =====================================
+   ENCABEZADO
+===================================== */
+
+.servicios-hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 50px;
+    padding: 85px max(7%, 25px);
+
+    background:
+        radial-gradient(circle at 85% 20%, #D8F3F5 0, transparent 30%),
+        linear-gradient(135deg, #FFFFFF, #EAF8FC);
+}
+
+.servicios-hero-contenido {
+    flex: 1;
+    max-width: 650px;
+    animation: serviciosEntrada 0.8s ease both;
+}
+
+.servicios-etiqueta {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+
+    margin-bottom: 20px;
+
+    color: var(--turquesa-oscuro);
+    font-size: 12px;
+    font-weight: 800;
+    letter-spacing: 2px;
+}
+
+.servicios-etiqueta::before {
+    content: "";
+    width: 30px;
+    height: 3px;
+    background: var(--turquesa);
+    border-radius: 5px;
+}
+
+.servicios-hero h1 {
+    color: var(--texto);
+    font-size: clamp(38px, 5vw, 60px);
+    line-height: 1.13;
+    letter-spacing: -1.5px;
+    margin-bottom: 25px;
+}
+
+.servicios-hero h1 span {
+    display: block;
+    color: var(--turquesa-oscuro);
+}
+
+.servicios-hero p {
+    max-width: 600px;
+    color: var(--texto-suave);
+    font-size: 16px;
+    line-height: 1.9;
+    margin-bottom: 30px;
+}
+
+.servicios-boton {
+    display: inline-flex;
+    align-items: center;
+    gap: 18px;
+
+    padding: 15px 23px;
+
+    color: var(--blanco);
+    background: var(--turquesa-oscuro);
+    border-radius: 10px;
+
+    font-size: 14px;
+    font-weight: 700;
+
+    transition: background 0.3s, transform 0.3s;
+}
+
+.servicios-boton span {
+    font-size: 22px;
+    line-height: 1;
+    transition: transform 0.3s;
+}
+
+.servicios-boton:hover {
+    color: var(--blanco);
+    background: var(--turquesa);
+    transform: translateY(-3px);
+}
+
+.servicios-boton:hover span {
+    transform: translateX(4px);
+}
+
+
+/* =====================================
+   ELEMENTO DECORATIVO DEL ENCABEZADO
+===================================== */
+
+.servicios-hero-visual {
+    position: relative;
+    flex: 0 0 330px;
+    height: 320px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.servicios-circulo {
+    position: absolute;
+    border-radius: 50%;
+}
+
+.circulo-externo {
+    width: 270px;
+    height: 270px;
+
+    background: linear-gradient(145deg, #DDF6F5, #BCECEF);
+    border: 1px solid #C4EAED;
+}
+
+.circulo-interno {
+    width: 205px;
+    height: 205px;
+
+    background: rgba(255, 255, 255, 0.85);
+    border: 1px solid var(--azul-claro);
+    box-shadow: 0 20px 50px rgba(8, 127, 140, 0.10);
+}
+
+.servicios-cruz {
+    position: relative;
+    z-index: 1;
+
+    color: var(--turquesa-oscuro);
+    font-size: 155px;
+    font-weight: 300;
+    line-height: 1;
+}
+
+.servicios-sello {
+    position: absolute;
+    right: -5px;
+    bottom: 10px;
+    z-index: 2;
+
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+
+    padding: 17px 22px;
+
+    background: var(--blanco);
+    border: 1px solid var(--borde);
+    border-radius: 14px;
+
+    box-shadow: 0 12px 30px rgba(51, 78, 104, 0.10);
+}
+
+.servicios-sello span {
+    color: var(--turquesa-oscuro);
+    font-size: 27px;
+    font-weight: 800;
+}
+
+.servicios-sello small {
+    color: var(--texto-suave);
+    font-size: 9px;
+    font-weight: 800;
+    letter-spacing: 1px;
+}
+
+
+/* =====================================
+   INTRODUCCIÓN
+===================================== */
+
+.servicios-introduccion {
+    position: relative;
+
+    display: flex;
+    align-items: center;
+    gap: 25px;
+
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 40px;
+
+    background: var(--blanco);
+    border: 1px solid var(--borde);
+    border-radius: 20px;
+
+    overflow: hidden;
+}
+
+.servicios-intro-simbolo {
+    flex: 0 0 75px;
+    width: 75px;
+    height: 75px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    color: var(--turquesa-oscuro);
+    background: var(--azul-fondo);
+    border: 1px solid #CDEBED;
+    border-radius: 18px;
+
+    font-size: 55px;
+    font-weight: 300;
+}
+
+.servicios-intro-texto {
+    position: relative;
+    z-index: 1;
+    max-width: 700px;
+}
+
+.servicios-intro-texto > span {
+    display: block;
+    color: var(--turquesa);
+    font-size: 11px;
+    font-weight: 800;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+}
+
+.servicios-intro-texto h2 {
+    color: var(--turquesa-oscuro);
+    font-size: 25px;
+    line-height: 1.4;
+    margin-bottom: 12px;
+}
+
+.servicios-intro-texto p {
+    color: var(--texto-suave);
+    font-size: 14px;
+    line-height: 1.8;
+    margin-bottom: 0;
+}
+
+.servicios-intro-numero {
+    position: absolute;
+    right: 15px;
+    bottom: -45px;
+
+    color: rgba(24, 166, 166, 0.08);
+    font-size: 180px;
+    font-weight: 800;
+    line-height: 1;
+}
+
+
+/* =====================================
+   LISTADO DE SERVICIOS
+===================================== */
+
+.servicios-listado {
+    padding: 100px 30px;
+}
+
+.servicios-encabezado {
+    max-width: 750px;
+    margin: 0 auto 50px;
+    text-align: center;
+}
+
+.servicios-subtitulo {
+    display: inline-block;
+    color: var(--turquesa);
+    font-size: 12px;
+    font-weight: 800;
+    letter-spacing: 2px;
+    margin-bottom: 15px;
+}
+
+.servicios-encabezado h2 {
+    color: var(--turquesa-oscuro);
+    font-size: clamp(30px, 4vw, 42px);
+    line-height: 1.25;
+    margin-bottom: 18px;
+}
+
+.servicios-encabezado p {
+    color: var(--texto-suave);
+    font-size: 15px;
+    line-height: 1.9;
+    margin-bottom: 0;
+}
+
+
+/* CUADRÍCULA */
+
+.servicios-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 24px;
+
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+
+/* TARJETAS */
+
+.servicio-tarjeta {
+    position: relative;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    min-width: 0;
+    min-height: 340px;
+    padding: 28px;
+
+    background: var(--blanco);
+    border: 1px solid var(--borde);
+    border-radius: 18px;
+
+    box-shadow: 0 8px 25px rgba(51, 78, 104, 0.035);
+
+    overflow: hidden;
+
+    transition:
+        transform 0.3s ease,
+        border-color 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+.servicio-tarjeta::before {
+    content: "";
+
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 4px;
+
+    background: linear-gradient(
+        90deg,
+        var(--turquesa-oscuro),
+        var(--azul-claro)
+    );
+
+    transform: scaleX(0);
+    transform-origin: left;
+
+    transition: transform 0.3s ease;
+}
+
+.servicio-tarjeta:hover {
+    transform: translateY(-7px);
+    border-color: #B9E5E8;
+    box-shadow: 0 18px 38px rgba(8, 127, 140, 0.10);
+}
+
+.servicio-tarjeta:hover::before {
+    transform: scaleX(1);
+}
+
+
+/* NÚMERO Y SÍMBOLO */
+
+.servicio-tarjeta-superior {
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    margin-bottom: 25px;
+}
+
+.servicio-numero {
+    color: #A3B8C5;
+    font-size: 13px;
+    font-weight: 800;
+    letter-spacing: 1px;
+}
+
+.servicio-simbolo {
+    width: 62px;
+    height: 62px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    color: var(--turquesa-oscuro);
+    background: var(--azul-fondo);
+    border: 1px solid #D3ECEF;
+    border-radius: 17px;
+
+    font-size: 35px;
+    font-weight: 400;
+
+    transition:
+        color 0.3s ease,
+        background 0.3s ease,
+        transform 0.3s ease;
+}
+
+.servicio-tarjeta:hover .servicio-simbolo {
+    color: var(--blanco);
+    background: var(--turquesa-oscuro);
+    transform: scale(1.05);
+}
+
+
+/* INFORMACIÓN */
+
+.servicio-categoria {
+    color: var(--turquesa);
+    font-size: 9px;
+    font-weight: 800;
+    letter-spacing: 1.5px;
+    line-height: 1.6;
+    margin-bottom: 12px;
+}
+
+.servicio-tarjeta h3 {
+    color: var(--turquesa-oscuro);
+    font-size: 21px;
+    line-height: 1.4;
+    margin-bottom: 14px;
+}
+
+.servicio-tarjeta > p {
+    flex: 1;
+
+    color: var(--texto-suave);
+    font-size: 13px;
+    line-height: 1.9;
+
+    margin-bottom: 25px;
+}
+
+
+/* PIE DE TARJETA */
+
+.servicio-tarjeta-pie {
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+
+    padding-top: 17px;
+    border-top: 1px solid var(--borde);
+}
+
+.servicio-tarjeta-pie > span:first-child {
+    color: var(--texto-suave);
+    font-size: 11px;
+    font-weight: 600;
+    line-height: 1.6;
+}
+
+.servicio-flecha {
+    flex: 0 0 30px;
+    width: 30px;
+    height: 30px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    color: var(--turquesa-oscuro);
+    background: var(--azul-fondo);
+    border-radius: 9px;
+
+    font-size: 18px;
+
+    transition:
+        color 0.3s ease,
+        background 0.3s ease,
+        transform 0.3s ease;
+}
+
+.servicio-tarjeta:hover .servicio-flecha {
+    color: var(--blanco);
+    background: var(--turquesa);
+    transform: translate(2px, -2px);
+}
+
+
+/* =====================================
+   CONTACTO
+===================================== */
+
+.servicios-contacto {
+    position: relative;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 35px;
+
+    padding: 75px 30px;
+
+    color: var(--blanco);
+    background: linear-gradient(125deg, #087F8C, #18A6A6);
+
+    overflow: hidden;
+}
+
+.servicios-contacto::before,
+.servicios-contacto::after {
+    content: "";
+    position: absolute;
+
+    width: 260px;
+    height: 260px;
+
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    border-radius: 50%;
+}
+
+.servicios-contacto::before {
+    top: -150px;
+    left: -70px;
+}
+
+.servicios-contacto::after {
+    right: -80px;
+    bottom: -160px;
+    width: 330px;
+    height: 330px;
+}
+
+.servicios-contacto-simbolo {
+    position: relative;
+    z-index: 1;
+
+    flex: 0 0 85px;
+    width: 85px;
+    height: 85px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    color: var(--blanco);
+    border: 1px solid rgba(255, 255, 255, 0.55);
+    border-radius: 20px;
+
+    font-size: 65px;
+    font-weight: 300;
+}
+
+.servicios-contacto-contenido {
+    position: relative;
+    z-index: 1;
+    max-width: 700px;
+}
+
+.servicios-contacto-contenido > span {
+    display: block;
+    color: #D7F5F5;
+    font-size: 11px;
+    font-weight: 800;
+    letter-spacing: 2px;
+    margin-bottom: 12px;
+}
+
+.servicios-contacto h2 {
+    color: var(--blanco);
+    font-size: clamp(28px, 4vw, 38px);
+    line-height: 1.3;
+    margin-bottom: 17px;
+}
+
+.servicios-contacto p {
+    color: var(--blanco);
+    font-size: 14px;
+    line-height: 1.9;
+    margin-bottom: 25px;
+}
+
+.servicios-boton-blanco {
+    color: var(--turquesa-oscuro);
+    background: var(--blanco);
+}
+
+.servicios-boton-blanco:hover {
+    color: var(--blanco);
+    background: #426E9C;
+}
+
+
+/* =====================================
+   ANIMACIÓN
+===================================== */
+
+@keyframes serviciosEntrada {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+/* =====================================
+   TABLET
+===================================== */
+
+@media (max-width: 950px) {
+
+    .servicios-hero {
+        gap: 25px;
+        padding: 70px 35px;
+    }
+
+    .servicios-hero-visual {
+        flex-basis: 270px;
+        transform: scale(0.9);
+    }
+
+    .servicios-introduccion {
+        margin: 0 20px;
+        padding: 30px;
+    }
+
+    .servicios-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 20px;
+    }
+
+}
+
+
+/* =====================================
+   CELULAR
+===================================== */
+
+@media (max-width: 650px) {
+
+    .servicios-hero {
+        flex-direction: column;
+        text-align: center;
+        padding: 55px 22px;
+    }
+
+    .servicios-hero-contenido {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .servicios-hero h1 {
+        font-size: 38px;
+        letter-spacing: -1px;
+    }
+
+    .servicios-hero p {
+        font-size: 15px;
+    }
+
+    .servicios-hero-visual {
+        flex-basis: auto;
+        width: 100%;
+        max-width: 320px;
+        height: 260px;
+        transform: scale(0.85);
+        margin-top: -5px;
+    }
+
+    .servicios-introduccion {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 20px;
+        padding: 28px 22px;
+        margin: 0 15px;
+    }
+
+    .servicios-intro-simbolo {
+        width: 60px;
+        height: 60px;
+        flex-basis: 60px;
+        font-size: 43px;
+    }
+
+    .servicios-intro-texto h2 {
+        font-size: 22px;
+    }
+
+    .servicios-listado {
+        padding: 70px 18px;
+    }
+
+    .servicios-encabezado {
+        margin-bottom: 35px;
+    }
+
+    .servicios-encabezado h2 {
+        font-size: 30px;
+    }
+
+    .servicios-grid {
+        grid-template-columns: 1fr;
+        gap: 18px;
+    }
+
+    .servicio-tarjeta {
+        min-height: 310px;
+        padding: 25px;
+    }
+
+    .servicios-contacto {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 25px;
+        padding: 60px 22px;
+    }
+
+    .servicios-contacto-simbolo {
+        flex-basis: 65px;
+        width: 65px;
+        height: 65px;
+        font-size: 48px;
+    }
+
+    .servicios-contacto h2 {
+        font-size: 29px;
+    }
+
+}
+
+
+/* =====================================
+   PANTALLAS PEQUEÑAS
+===================================== */
+
+@media (max-width: 380px) {
+
+    .servicios-hero h1 {
+        font-size: 32px;
+    }
+
+    .servicios-hero-visual {
+        transform: scale(0.75);
+        margin-left: -15px;
+    }
+
+    .servicio-tarjeta {
+        padding: 22px;
+    }
+
+}
