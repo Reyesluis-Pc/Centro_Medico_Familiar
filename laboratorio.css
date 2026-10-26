@@ -1,0 +1,171 @@
+:root {
+    --inicio-turquesa: #18A6A6;
+    --inicio-turquesa-oscuro: #087F8C;
+    --inicio-celeste: #77D4E8;
+    --inicio-celeste-claro: #EAF8FC;
+    --inicio-blanco: #FFFFFF;
+    --inicio-texto: #334E68;
+    --inicio-texto-suave: #6B8294;                                                                                                        
+    --inicio-fondo: #F5F9FC;
+    --inicio-borde: #E0EDF2;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: var(--inicio-fondo);
+    color: var(--inicio-texto);
+    margin: 0;
+    padding: 30px;
+}
+
+.hospital-section {
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.section-header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.section-header h2 {
+    color: var(--inicio-turquesa-oscuro);
+    font-size: 24px;
+    margin-bottom: 5px;
+    text-transform: uppercase;
+}
+
+.section-header p {
+    color: var(--inicio-texto-suave);
+    font-size: 14px;
+}
+
+/* Cambio clave: Usar columnas en lugar de grid para eliminar espacios verticales */
+.panels-grid {
+    column-width: 320px;
+    column-gap: 20px;
+}
+
+.panel-card {
+    background-color: var(--inicio-blanco);
+    border: 1px solid var(--inicio-borde);
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.03);
+    margin-bottom: 20px;
+    break-inside: avoid; /* Evita que la tarjeta se corte entre columnas */
+    display: inline-block; /* Necesario para que funcione correctamente con column-width */
+    width: 100%;
+    transition: transform 0.2s ease;
+}
+
+.panel-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 10px rgba(24, 166, 166, 0.1);
+}
+
+.panel-title {
+    background-color: var(--inicio-turquesa-oscuro);
+    color: var(--inicio-blanco);
+    padding: 12px 18px;
+    font-size: 15px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+}
+
+.panel-content {
+    padding: 15px 18px;
+    background-color: var(--inicio-celeste-claro);
+}
+
+.panel-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.panel-list li {
+    padding: 7px 0;
+    font-size: 14px;
+    color: var(--inicio-texto);
+    border-bottom: 1px solid var(--inicio-borde);
+}
+
+.panel-list li:last-child {
+    border-bottom: none;
+}  
+
+/* Estilos generales de la sección */
+.hospital-section {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Cabecera y botón alineados a la izquierda */
+.section-header {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+    margin-bottom: 30px;
+}
+
+.btn-volver {
+    display: inline-block;
+    padding: 12px 24px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #ffffff;
+    background-color: #087F8C;
+    border-radius: 6px;
+    text-decoration: none;
+    margin-bottom: 20px;
+    transition: background-color 0.2s ease;
+}
+
+.btn-volver:hover {
+    background-color: #18A6A6;
+}
+ 
+
+/*commienza la mediaquery*/
+
+.panels-grid {
+    column-count: 3;       
+    column-gap: 20px;      
+}
+
+.panel-card {
+    break-inside: avoid;   
+    margin-bottom: 20px;  
+}
+
+
+@media (max-width: 1024px) {
+    .panels-grid {
+        column-count: 2;   
+    }
+}
+
+
+@media (max-width: 768px) {
+    .panels-grid {
+        column-count: 1;   
+    }
+    
+    .hospital-section {
+        padding: 10px;
+    }
+
+    .section-header h2 {
+        font-size: 22px;
+    }
+
+    .btn-volver {
+        width: 100%;
+        text-align: center;
+        box-sizing: border-box;
+    }
+}
