@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="es">
 
@@ -10,6 +9,7 @@
 
     <!-- CSS COMPARTIDO DE LA BARRA -->
     <link rel="stylesheet" href="barra.css">
+    <link rel="stylesheet" href="servicios.css">
 </head>
 
 <!-- MODIFICA ESTA CLASE SEGÚN LA PÁGINA -->
@@ -86,11 +86,447 @@
     </header>
 
     <!-- AQUÍ EMPIEZA EL CONTENIDO DE CADA PÁGINA -->
-    <main>
+<main class="servicios-pagina">
 
-        <!-- Conserva aquí el contenido correspondiente -->
+    <!-- ENCABEZADO PRINCIPAL -->
+    <section class="servicios-hero">
 
-    </main>
+        <div class="servicios-hero-contenido">
+
+            <span class="servicios-etiqueta">
+                CENTRO MÉDICO FAMILIAR, S. A.
+            </span>
+
+            <h1>
+                Nuestros servicios
+                <span>médicos</span>
+            </h1>
+
+            <p>
+                Ponemos a tu disposición diferentes especialidades
+                y servicios médicos orientados al cuidado de tu salud
+                y al bienestar de tu familia.
+            </p>
+
+            <a href="#lista-servicios" class="servicios-boton">
+                Explorar servicios
+                <span aria-hidden="true">→</span>
+            </a>
+
+        </div>
+
+
+        <div class="servicios-hero-visual" aria-hidden="true">
+
+            <div class="servicios-circulo circulo-externo"></div>
+            <div class="servicios-circulo circulo-interno"></div>
+
+            <div class="servicios-cruz">+</div>
+
+            <div class="servicios-sello">
+                <span>CMF</span>
+                <small>ATENCIÓN MÉDICA</small>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- MENSAJE DESTACADO -->
+    <section class="servicios-introduccion">
+
+        <div class="servicios-intro-simbolo" aria-hidden="true">
+            +
+        </div>
+
+        <div class="servicios-intro-texto">
+
+            <span>ATENCIÓN PARA TU BIENESTAR</span>
+
+            <h2>
+                Diferentes especialidades, un compromiso con tu salud
+            </h2>
+
+            <p>
+                Conoce los servicios disponibles en nuestra institución
+                y consulta con nuestro personal para recibir información
+                sobre la especialidad que necesitas.
+            </p>
+
+        </div>
+
+        <span class="servicios-intro-numero" aria-hidden="true">
+            11
+        </span>
+
+    </section>
+
+
+    <!-- LISTA DE SERVICIOS -->
+    <section class="servicios-listado" id="lista-servicios">
+
+        <div class="servicios-encabezado">
+
+            <span class="servicios-subtitulo">
+                ESPECIALIDADES Y SERVICIOS
+            </span>
+
+            <h2>
+                Conoce lo que ofrecemos
+            </h2>
+
+            <p>
+                Explora nuestras áreas de atención y encuentra
+                información general sobre cada servicio.
+            </p>
+
+        </div>
+
+
+        <div class="servicios-grid">
+
+
+            <!-- 01 GINECOLOGÍA -->
+            <article class="servicio-tarjeta">
+
+                <div class="servicio-tarjeta-superior">
+                    <span class="servicio-numero">01</span>
+                    <span class="servicio-simbolo" aria-hidden="true">♀</span>
+                </div>
+
+                <span class="servicio-categoria">
+                    ESPECIALIDAD MÉDICA
+                </span>
+
+                <h3>Ginecología</h3>
+
+                <p>
+                    Atención de la salud femenina, evaluación ginecológica
+                    y orientación sobre el cuidado reproductivo.
+                </p>
+
+                <div class="servicio-tarjeta-pie">
+                    <span>Salud femenina</span>
+                    <span class="servicio-flecha" aria-hidden="true">↗</span>
+                </div>
+
+            </article>
+
+
+            <!-- 02 NEUROCIRUGÍA -->
+            <article class="servicio-tarjeta">
+
+                <div class="servicio-tarjeta-superior">
+                    <span class="servicio-numero">02</span>
+                    <span class="servicio-simbolo" aria-hidden="true">◎</span>
+                </div>
+
+                <span class="servicio-categoria">
+                    ESPECIALIDAD QUIRÚRGICA
+                </span>
+
+                <h3>Neurocirugía</h3>
+
+                <p>
+                    Evaluación especializada de determinadas afecciones
+                    del cerebro, la columna vertebral y el sistema nervioso.
+                </p>
+
+                <div class="servicio-tarjeta-pie">
+                    <span>Sistema nervioso</span>
+                    <span class="servicio-flecha" aria-hidden="true">↗</span>
+                </div>
+
+            </article>
+
+
+            <!-- 03 CIRUGÍA GENERAL -->
+            <article class="servicio-tarjeta">
+
+                <div class="servicio-tarjeta-superior">
+                    <span class="servicio-numero">03</span>
+                    <span class="servicio-simbolo" aria-hidden="true">✳</span>
+                </div>
+
+                <span class="servicio-categoria">
+                    SERVICIO QUIRÚRGICO
+                </span>
+
+                <h3>Cirugía general</h3>
+
+                <p>
+                    Evaluación y tratamiento quirúrgico de distintas
+                    enfermedades y afecciones que requieren intervención.
+                </p>
+
+                <div class="servicio-tarjeta-pie">
+                    <span>Atención quirúrgica</span>
+                    <span class="servicio-flecha" aria-hidden="true">↗</span>
+                </div>
+
+            </article>
+
+
+            <!-- 04 CIRUGÍA POR VIDEO -->
+            <article class="servicio-tarjeta">
+
+                <div class="servicio-tarjeta-superior">
+                    <span class="servicio-numero">04</span>
+                    <span class="servicio-simbolo" aria-hidden="true">▣</span>
+                </div>
+
+                <span class="servicio-categoria">
+                    TÉCNICA QUIRÚRGICA
+                </span>
+
+                <h3>Cirugía por video</h3>
+
+                <p>
+                    Procedimientos quirúrgicos realizados con apoyo
+                    de una cámara e instrumentos especializados,
+                    según la indicación médica.
+                </p>
+
+                <div class="servicio-tarjeta-pie">
+                    <span>Cirugía mínimamente invasiva</span>
+                    <span class="servicio-flecha" aria-hidden="true">↗</span>
+                </div>
+
+            </article>
+
+
+            <!-- 05 CIRUGÍA MAXILOFACIAL -->
+            <article class="servicio-tarjeta">
+
+                <div class="servicio-tarjeta-superior">
+                    <span class="servicio-numero">05</span>
+                    <span class="servicio-simbolo" aria-hidden="true">◇</span>
+                </div>
+
+                <span class="servicio-categoria">
+                    ESPECIALIDAD QUIRÚRGICA
+                </span>
+
+                <h3>Cirugía maxilofacial</h3>
+
+                <p>
+                    Evaluación y tratamiento de determinadas afecciones
+                    de la boca, los maxilares y las estructuras faciales.
+                </p>
+
+                <div class="servicio-tarjeta-pie">
+                    <span>Región facial y maxilares</span>
+                    <span class="servicio-flecha" aria-hidden="true">↗</span>
+                </div>
+
+            </article>
+
+
+            <!-- 06 ENDOSCOPÍA -->
+            <article class="servicio-tarjeta">
+
+                <div class="servicio-tarjeta-superior">
+                    <span class="servicio-numero">06</span>
+                    <span class="servicio-simbolo" aria-hidden="true">⌕</span>
+                </div>
+
+                <span class="servicio-categoria">
+                    PROCEDIMIENTO MÉDICO
+                </span>
+
+                <h3>Endoscopía</h3>
+
+                <p>
+                    Procedimiento que permite observar el interior
+                    de determinadas partes del cuerpo mediante
+                    un instrumento especializado.
+                </p>
+
+                <div class="servicio-tarjeta-pie">
+                    <span>Evaluación interna</span>
+                    <span class="servicio-flecha" aria-hidden="true">↗</span>
+                </div>
+
+            </article>
+
+
+            <!-- 07 TRAUMATOLOGÍA -->
+            <article class="servicio-tarjeta">
+
+                <div class="servicio-tarjeta-superior">
+                    <span class="servicio-numero">07</span>
+                    <span class="servicio-simbolo" aria-hidden="true">⌁</span>
+                </div>
+
+                <span class="servicio-categoria">
+                    ESPECIALIDAD MÉDICA
+                </span>
+
+                <h3>Traumatología</h3>
+
+                <p>
+                    Evaluación y tratamiento de lesiones y afecciones
+                    relacionadas con los huesos, las articulaciones
+                    y el sistema musculoesquelético.
+                </p>
+
+                <div class="servicio-tarjeta-pie">
+                    <span>Huesos y articulaciones</span>
+                    <span class="servicio-flecha" aria-hidden="true">↗</span>
+                </div>
+
+            </article>
+
+
+            <!-- 08 MEDICINA INTERNA -->
+            <article class="servicio-tarjeta">
+
+                <div class="servicio-tarjeta-superior">
+                    <span class="servicio-numero">08</span>
+                    <span class="servicio-simbolo" aria-hidden="true">+</span>
+                </div>
+
+                <span class="servicio-categoria">
+                    ESPECIALIDAD MÉDICA
+                </span>
+
+                <h3>Medicina interna</h3>
+
+                <p>
+                    Atención médica de personas adultas para la evaluación,
+                    el diagnóstico y el manejo de enfermedades que afectan
+                    diferentes órganos y sistemas.
+                </p>
+
+                <div class="servicio-tarjeta-pie">
+                    <span>Salud integral del adulto</span>
+                    <span class="servicio-flecha" aria-hidden="true">↗</span>
+                </div>
+
+            </article>
+
+
+            <!-- 09 FARMACIA -->
+            <article class="servicio-tarjeta">
+
+                <div class="servicio-tarjeta-superior">
+                    <span class="servicio-numero">09</span>
+                    <span class="servicio-simbolo" aria-hidden="true">▤</span>
+                </div>
+
+                <span class="servicio-categoria">
+                    SERVICIO FARMACÉUTICO
+                </span>
+
+                <h3>Farmacia</h3>
+
+                <p>
+                    Servicio de dispensación de medicamentos y orientación
+                    sobre su uso conforme a las indicaciones y
+                    recomendaciones del personal autorizado.
+                </p>
+
+                <div class="servicio-tarjeta-pie">
+                    <span>Medicamentos</span>
+                    <span class="servicio-flecha" aria-hidden="true">↗</span>
+                </div>
+
+            </article>
+
+
+            <!-- 10 ULTRASONIDO -->
+            <article class="servicio-tarjeta">
+
+                <div class="servicio-tarjeta-superior">
+                    <span class="servicio-numero">10</span>
+                    <span class="servicio-simbolo" aria-hidden="true">)))</span>
+                </div>
+
+                <span class="servicio-categoria">
+                    DIAGNÓSTICO POR IMAGEN
+                </span>
+
+                <h3>Ultrasonido</h3>
+
+                <p>
+                    Estudio de diagnóstico por imagen que utiliza ondas
+                    sonoras para observar determinadas estructuras
+                    y órganos del cuerpo.
+                </p>
+
+                <div class="servicio-tarjeta-pie">
+                    <span>Estudios diagnósticos</span>
+                    <span class="servicio-flecha" aria-hidden="true">↗</span>
+                </div>
+
+            </article>
+
+
+            <!-- 11 GASTROENTEROLOGÍA -->
+            <article class="servicio-tarjeta">
+
+                <div class="servicio-tarjeta-superior">
+                    <span class="servicio-numero">11</span>
+                    <span class="servicio-simbolo" aria-hidden="true">◉</span>
+                </div>
+
+                <span class="servicio-categoria">
+                    ESPECIALIDAD MÉDICA
+                </span>
+
+                <h3>Gastroenterología</h3>
+
+                <p>
+                    Evaluación y tratamiento de enfermedades que afectan
+                    el aparato digestivo, incluyendo el esófago,
+                    el estómago y los intestinos.
+                </p>
+
+                <div class="servicio-tarjeta-pie">
+                    <span>Salud digestiva</span>
+                    <span class="servicio-flecha" aria-hidden="true">↗</span>
+                </div>
+
+            </article>
+
+
+        </div>
+
+    </section>
+
+
+    <!-- LLAMADO A LA ACCIÓN -->
+    <section class="servicios-contacto">
+
+        <div class="servicios-contacto-simbolo" aria-hidden="true">
+            +
+        </div>
+
+        <div class="servicios-contacto-contenido">
+
+            <span>ESTAMOS PARA ORIENTARTE</span>
+
+            <h2>
+                ¿Necesitas información sobre un servicio?
+            </h2>
+
+            <p>
+                Comunícate con nuestro equipo para consultar
+                la disponibilidad de especialidades, los horarios
+                de atención y los requisitos para tu cita.
+            </p>
+
+            <a href="contactos.html" class="servicios-boton servicios-boton-blanco">
+                Ir a contactos
+                <span aria-hidden="true">→</span>
+            </a>
+
+        </div>
+
+    </section>
+
+</main>
 
 </body>
 </html>
